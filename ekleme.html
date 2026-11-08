@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görev Takip - Görev Ekle</title>
+</head>
+<body>
+
+<header>
+    <img src="images/check.svg" alt="Görev Takip Logosu" width="75">
+    <h1>Görev Takip Uygulaması</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="gorevler.html">Görevlerim</a></li>
+            <li><a href="ekleme.html">Görev Ekle</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <section id="gorev-ekleme-alani">
+        <h2>Yeni Görev Ekle</h2>
+        <p>Görevin bilgilerini eksiksiz doldur.</p>
+        <hr>
+
+        <form action="#" method="get">
+
+            <p>
+                <label for="gorev-baslik">Görevin Adı:</label><br><br>
+                <input type="text" id="gorev-baslik" name="gorev_baslik" placeholder="Örn: Matematik Ödevi" required>
+            </p>
+            <hr>
+
+            <p>
+                <label for="gorev-kategori">Kategori:</label><br><br>
+                <select id="gorev-kategori" name="gorev_kategori">
+                    <option value="ders">Ders</option>
+                    <option value="kisisel">Kişisel</option>
+                    <option value="is">İş</option>
+                </select>
+            </p>
+            <hr>
+
+            <p>
+                <label for="gorev-oncelik">Öncelik Derecesi:</label><br><br>
+                <select id="gorev-oncelik" name="oncelik">
+                    <option value="dusuk" selected>Düşük</option>
+                    <option value="orta">Orta</option>
+                    <option value="yuksek">Yüksek</option>
+                </select>
+            </p>
+            <hr>
+
+            <p>
+                <label for="teslim-tarihi">Son Teslim Tarihi:</label><br><br>
+                <input type="date" id="teslim-tarihi" name="teslim_tarihi">
+            </p>
+            <hr>
+
+            <p>
+                <label for="gorev-aciklama">Görev Notu:</label><br><br>
+                <textarea id="gorev-aciklama" name="gorev_aciklama" rows="4" cols="30" placeholder="Görevle ilgili kısa bir not ekle..."></textarea>
+            </p>
+            <hr>
+
+            <p>
+                <button type="submit">Görevi Kaydet</button>
+                <button type="reset">Sıfırla</button>
+            </p>
+            <hr>
+            
+
+        </form>
+    </section>
+</main>
+
+<hr>
+
+<footer>
+    <p>&copy; 2026 Görev Takip Uygulaması</p>
+</footer>
+
+</body>
+</html>
