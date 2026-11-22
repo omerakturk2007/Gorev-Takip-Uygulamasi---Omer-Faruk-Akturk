@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ana-renk: #14213D;
+  --vurgu-renk: #FCA311;
+  --baglanti-renk: #1D7066;
+  --zemin: #F2F4F7;
+  --metin: #1F2937;
+  --kenar: #D0D5DD;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--metin);
+  background-color: var(--zemin);
+}
+
+h1, h2 {
+  color: var(--ana-renk);
+}
+
+a {
+  color: var(--baglanti-renk);
+  transition: background-color 0.2s, color 0.2s; /*Linklerde yumuşak geçiş*/
+}
+
+a:hover {
+  color: var(--vurgu-renk);
+}
+
+.vurgu {
+  color: var(--vurgu-renk);
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px;
+  background-color: var(--ana-renk);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  transition: background-color 0.2s, color 0.2s;
+  display: block;
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.aktif {
+  background-color: var(--vurgu-renk);
+  color: var(--ana-renk);
+}
+
+main {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+}
+
+/*ANASAYFA KART KODLARI*/
+
+.kart-izgara {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.kart {
+  background-color: var(--zemin);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--kenar);
+}
+
+/*ANASAYFA YENİ KART KODLARI*/
+
+.kart {
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.kart:hover {
+  border-color: var(--vurgu-renk);
+  transform: translateY(-5px);
+}
+
+
+
+/* gorevler.html TABLO KODLARI*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--kenar);
+}
+
+th {
+  background-color: var(--ana-renk);
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--zemin);
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: var(--zemin);
+}
+
+.oncelik-yuksek, .tarihi-gecmis {
+  color: #B42318;
+  font-weight: bold;
+}
+
+.oncelik-orta {
+  color: var(--vurgu-renk);
+  font-weight: bold;
+}
+
+.oncelik-dusuk, .tamamlanan-gorev {
+  color: var(--baglanti-renk);
+  font-weight: bold;
+}
+
+/*TABLOYA YENİ EKLENENLER*/
+
+tbody tr {
+  transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+  background-color: #E2E8F0;
+}
+
+/* ekleme.html ÜZERİNDE BUTON VE LABEL KODLARI */
+
+label {
+  display: block; 
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 10px;
+  border: 1px solid var(--kenar);
+  border-radius: 6px; 
+  font: inherit;
+  transition: border-color 0.5s;
+}
+
+input:user-invalid, select:user-invalid, textarea:user-invalid {
+  border-color: red;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--vurgu-renk);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* DÜĞMELERİN KODLARI */
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--vurgu-renk);
+  color: var(--ana-renk);
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+button:hover {
+  background-color: var(--ana-renk);
+  color: white;
+}
+
+button[type="reset"] {
+  background-color: var(--zemin);
+  color: var(--metin);
+  border: 1px solid var(--kenar);
+}
+
+button[type="reset"]:hover {
+  background-color: var(--kenar);
+  color: var(--ana-renk);
+}
+
+td button {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/*MAIL VE REFERANS KODLARI*/
+
+a[target="_blank"]::after {
+  content: " \2197";
+}
+
+a[href^="mailto:"]::after {
+  content: " \2709";
+}

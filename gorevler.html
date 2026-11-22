@@ -4,54 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Görev Takip - Görevlerim</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 2;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 25px;
-        }
-        th, td {
-            border: 5px solid #ddd;
-            padding: 15px;
-            text-align: left;
-        }
-        th {
-            background-color: darkgrey;
-        }
-        .oncelik-yuksek {
-            color: red;
-            font-weight: bold;
-        }
-        .oncelik-orta {
-            color: orange;
-            font-weight: bold;
-        }
-        .oncelik-dusuk {
-            color: green;
-            font-weight: bold;
-        }
-        button {
-            padding: 5px 10px;
-            cursor: pointer;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .tamamlanan-gorev{
-            color: green;
-            font-weight:bold;
-        }
-
-        .tarihi-gecmis{
-            color: red;
-            font-weight: bold;
-        }
-
-
-    </style>
 </head>
 <body>
 
@@ -61,14 +15,12 @@
     <nav>
         <ul>
             <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="gorevler.html">Görevlerim</a></li>
+            <li><a href="gorevler.html" class="aktif">Görevlerim</a></li>
             <li><a href="ekleme.html">Görev Ekle</a></li>
             <li><a href="hakkimizda.html">Hakkımızda</a></li>
         </ul>
     </nav>
 </header>
-
-<hr>
 
 <main>
     <section id="gorev-listesi">
@@ -139,8 +91,6 @@
         </table>
     </section>
 </main>
-
-<hr>
 
 <footer>
     <p>&copy; 2026 Görev Takip Uygulaması</p>

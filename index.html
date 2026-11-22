@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Görev Takip - Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,7 +13,7 @@
     <h1>Görev Takip Uygulaması</h1>       
     <nav>
         <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="index.html" class="aktif">Ana Sayfa</a></li>
             <li><a href="gorevler.html">Görevlerim</a></li>
             <li><a href="ekleme.html">Görev Ekle</a></li>
         </ul>
@@ -22,27 +23,28 @@
 <hr>
 
 <main>
-    <section id="tanitim"> <!-- Uygulama Tanıtım Kısmı-->
-        <p>Görevlerinizi planlayın, teslim tarihlerini <em>asla</em> kaçırmayın.</p>
-        <h2>Hoş Geldiniz</h2>
-        <p>Bu uygulama ile <strong>günlük işlerinizi, projelerinizi ve ödevlerinizi</strong> kolayca takip edebilirsiniz.</p> 
-    </section>
+    <div class="kart-izgara">
+        <section id="tanitim" class="kart">
+            <h2>Hoş Geldiniz</h2>
+            <p>Görevlerinizi planlayın, teslim tarihlerini asla kaçırmayın.</p>
+            <p>Bu uygulama ile günlük işlerinizi, projelerinizi ve ödevlerinizi kolayca takip edebilirsiniz.</p> 
+        </section>
 
-    <section id="ozellikler"> <!-- Uygulama Özellikler Kısmı-->
-        <h2>Neler Yapabilirsiniz?</h2>
-        <ul class="ozellik-listesi">
-            <li>Tüm görevlerinizi tek bir tabloda listeleyin</li>
-            <li>Acil ve normal öncelikli işlerinizi sınıflandırın</li>                                                          
-            <li>Kalan süreleri ve durumları <span class="vurgu">anında</span> görün</li>
-        </ul>
-    </section>
+        <section id="ozellikler" class="kart">
+            <h2>Neler Yapabilirsiniz?</h2>
+            <ul class="ozellik-listesi">
+                <li>Tüm görevlerinizi tek bir tabloda listeleyin</li>
+                <li>Acil ve normal öncelikli işlerinizi sınıflandırın</li>                                                          
+                <li>Kalan süreleri ve durumları anında görün</li>
+            </ul>
+        </section>
 
-    <section id="baglantilar">
-        <h2>Faydalı Bağlantılar</h2>
-        <p><a href="https://calendar.google.com" target="_blank"> Takvim</a></p>
-        <p><a href="mailto:destek@gorevtakip.com"> Mail Adresi</a></p>
-    </section>
-
+        <section id="baglantilar" class="kart">
+            <h2>Faydalı Bağlantılar</h2>
+            <p><a href="https://calendar.google.com" target="_blank">Takvim</a></p>
+            <p><a href="mailto:destek@gorevtakip.com">Mail Adresi</a></p>
+        </section>
+    </div>
 </main>
 
 <hr>
