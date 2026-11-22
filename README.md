@@ -43,7 +43,7 @@ BLM2537 dersi projem olan "Görev Takip Uygulaması" nın geliştirmelerini bura
 
 ## 5. HAFTA
 
-- ekleme.html dosyasındaki gereksiz <hr> ve <br> etiketleri temizlenerek boşluk ve satır düzeni CSS ile sağlandı.
+- ekleme.html dosyasındaki gereksiz hr ve br etiketleri temizlenerek boşluk ve satır düzeni CSS ile sağlandı.
 - Form etiketleri,inputlar, seçimli listeler ve not alanı düzenlendi.
 - Form kutularına odaklanma efekti ve yumuşak geçişler eklendi; not kutusunun yatay genişlemesi yarattığı sorunlardan ötürü kaldırıldı.
 - Zorunlu alanların boş bırakılması durumunda çerçeveyi kırmızıya çeviren doğrulama eklendi.
